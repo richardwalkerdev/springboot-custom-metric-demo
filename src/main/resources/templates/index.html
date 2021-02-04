@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<meta charset="UTF-8">
+<title>Metrics Demo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+</style>
+<script src=""></script>
+<body>
+    <div class="">
+        <h1>Spring Boot</h1>
+        <h3 th:text="${greeting}">This is a basic application for testing metrics.</h3>
+        <h2> custom_requests_total = <b th:text="${counter}"></b></p></h2>
+    </div>
+</body>
+</html> 
