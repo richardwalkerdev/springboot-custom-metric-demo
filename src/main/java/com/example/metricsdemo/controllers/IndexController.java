@@ -17,6 +17,7 @@ public class IndexController {
     @RequestMapping("/")
     public String index(Model model) {
         // Custom Metric
+        meterRegistry.counter("custom_requests_total", "app_name", "Spring App", "app_env", "staging");
         meterRegistry.counter("custom_requests_total").increment();
 
         model.addAttribute("greeting", message );
